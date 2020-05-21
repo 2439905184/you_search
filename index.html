@@ -4,16 +4,23 @@
     <title>游搜引擎 搜索你想要的游戏</title>
     <script>
     var  to_search_string=""
+    var input_node=document.getElementById("my_input");
+    console.log(input_node)
     var  form=""
     var action=""
     var action_taptap="https://www.taptap.com/search/"
    // role="search" method="get"
     var action_4399="http://so2.4399.com/search/search.php"
     var action_need_add_4399="?k="
-    function input()
-    {onforminput
+    function usr_input()
+    {
+    //onforminput
+  //  to_search_string=input_node.value
+   
     console.log("input")
-    }
+    console.log(input_node)
+    console.log(to_search_string)
+   }
     function search()
     {
     to_search_string=
@@ -23,7 +30,7 @@
   <body>
     输入来搜索
     <form id ="search" target="_blank" method="get" action="https://www.taptap.com/search/">
-    <input type="text" value="" oninput="input()">
+    <input id="my_input" type="text" value="" oninput="usr_input()">
     <input type="submit" value="搜索" onclick="search()">
     </form>
     <p>筛选</p>
