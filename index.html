@@ -2,10 +2,27 @@
   <head>
   <meta charset="utf-8"> 
     <title>游搜引擎 搜索你想要的游戏</title>
-    <script>
+    
+  </head>
+  <body>
+    输入来搜索
+    <form id ="search" target="_blank" method="get" action="">
+    <input id="my_input" type="text" value="" oninput="usr_input()">
+    <input id="tosearch" type="submit" value="搜索" onclick="search()">
+    </form>
+    <p>筛选</p>
+    <button >4399</button>
+    <button onclick="search()">taptap</button>
+    <button>steam</button>
+  </body>
+  <script>
+  //form
+  var action_node=document.getElementById("search")
+//  alert(action_node)
     var  to_search_string=""
     var input_node=document.getElementById("my_input");
     console.log(input_node)
+    alert(input_node)
     var  form=""
     var action=""
     var action_taptap="https://www.taptap.com/search/"
@@ -16,26 +33,16 @@
     {
     //onforminput
   //  to_search_string=input_node.value
-   
+   to_search_string=input_node.value
     console.log("input")
     console.log(input_node)
+    //alert(to_search_string)
     console.log(to_search_string)
+    action_node.action=action_taptap+to_search_string
    }
     function search()
     {
-    to_search_string=
+    alert(action_node.action)
     console.log("search!")
     }</script>
-  </head>
-  <body>
-    输入来搜索
-    <form id ="search" target="_blank" method="get" action="https://www.taptap.com/search/">
-    <input id="my_input" type="text" value="" oninput="usr_input()">
-    <input type="submit" value="搜索" onclick="search()">
-    </form>
-    <p>筛选</p>
-    <button >4399</button>
-    <button onclick="search()">taptap</button>
-    <button>steam</button>
-  </body>
 </html>
