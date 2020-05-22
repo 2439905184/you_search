@@ -6,18 +6,19 @@
   </head>
   <body>
     输入来搜索
-    <form id ="search" target="_blank" method="get" action="">
+    <form id ="search" target="_blank" method="GET" action="" ">
     <input id="my_input" type="text" value="" oninput="usr_input()">
     <input id="tosearch" type="submit" value="搜索" onclick="search()">
     </form>
     <p>筛选</p>
     <input id="check1" type="checkbox" onclick="m_check()">4399
-    <input  id="check2" type="checkbox" onclick="tap_check()">taptap
-    <input type="checkbox">steam
-  <input type="checkbox">ineinda独立游戏
-  <input type="checkbox">itch.io独立游戏
-  <input type="checkbox">国内方块游戏平台
-  <p>4399暂时不可用</p>
+    <input  id="check2" type="checkbox"  onclick="tap_check(id,checked)">taptap
+    <input id="check_steam" type="checkbox" onclick="tap_check(id)">steam
+  <input id="indian" type="checkbox" onclick="tap_check(id)">ineinda独立游戏
+  <input id="itch_io"type="checkbox" onclick="tap_check(id)">itch.io独立游戏
+  <input id="block" type="checkbox" onclick="tap_check(id)">国内方块游戏平台
+  <p>4399暂时不可用 steam taptap 可用 
+  目前只支持单选</p>
   </body>
   <script src="core.js"></script>
 </html>
