@@ -11,47 +11,13 @@
     <input id="tosearch" type="submit" value="搜索" onclick="search()">
     </form>
     <p>筛选</p>
-    <input type="checkbox" >4399
-    <input  type="checkbox"onclick="search()">taptap
+    <input id="check1" type="checkbox" onclick="m_check()">4399
+    <input  id="check2" type="checkbox" onclick="tap_check()">taptap
     <input type="checkbox">steam
   <input type="checkbox">ineinda独立游戏
   <input type="checkbox">itch.io独立游戏
   <input type="checkbox">国内方块游戏平台
+  <p>4399暂时不可用</p>
   </body>
-  <script>
-  //form
-  var action_node=document.getElementById("search")
-//  alert(action_node)
-    var  to_search_string=""
-    var input_node=document.getElementById("my_input");
-    console.log(input_node)
-    alert(input_node)
-    var  form=""
-    var action=""
-    var action_taptap="https://www.taptap.com/search/"
-   // role="search" method="get"
-    var action_4399="http://so2.4399.com/search/search.php"
-    var action_need_add_4399="?k="
-   var  action_steam="https://store.steampowered.com/search/?term="
-    var action_itch.io="https://itch.io/search?q="
-    //国内独立游戏网站
-    var action_india="https://indienova.com/search/all/"
-    //国内方块游戏平台
-    var action_block="http://store.cubejoy.com/html/en/store/searchgoods/websearch.html?search="
-    function usr_input()
-    {
-    //onforminput
-  //  to_search_string=input_node.value
-   to_search_string=input_node.value
-    console.log("input")
-    console.log(input_node)
-    //alert(to_search_string)
-    console.log(to_search_string)
-    action_node.action=action_taptap+to_search_string
-   }
-    function search()
-    {
-    alert(action_node.action)
-    console.log("search!")
-    }</script>
+  <script src="core.js"></script>
 </html>
