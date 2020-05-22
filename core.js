@@ -1,14 +1,16 @@
 var  chebox_node1=document.getElementById("check1")
 var  chebox_node2=document.getElementById("check2")
+//多个链接显示
+var links=document.getElementById("links")
 //form
-
+//一键搜索列表
+var search_list=[]
   var action_node=document.getElementById("search")
 //  alert(action_node)
     var  to_search_string=""
     var input_node=document.getElementById("my_input");
     console.log(input_node)
    // alert(input_node)
-    var  form=""
     var action=""
     var action_taptap="https://www.taptap.com/search/"
    // role="search" method="get"
@@ -38,6 +40,7 @@ if(chebox_node1.checked==true)
 function tap_check(id,checked)
 {
     //console.log(id)
+   
     var current_checkbox=document.getElementById(id)
 console.log(id+":"+current_checkbox.checked)
 if(current_checkbox.checked==true &&id=="check_steam")
@@ -46,15 +49,15 @@ if(current_checkbox.checked==true &&id=="check_steam")
     console.log("steam")
      action_node.action=action_steam+to_search_string
      console.log(action_node.action)
-    
+    search_list.push(action_node.action)
 }
 if(current_checkbox.checked==true &&id=="check2")
 {
     action=action_taptap
-    console.log("steam")
+    console.log("taptap")
      action_node.action=action_taptap+to_search_string
      console.log(action_node.action)
-    
+     search_list.push(action_node.action)
 }
 if(current_checkbox.checked==true &&id=="indian")
 {
@@ -62,6 +65,7 @@ if(current_checkbox.checked==true &&id=="indian")
     console.log("indian独立游戏")
      action_node.action=action_india+to_search_string
      console.log(action_node.action)
+     search_list.push(action_node.action)
     
 }
 if(current_checkbox.checked==true &&id=="itch_io")
@@ -70,8 +74,7 @@ if(current_checkbox.checked==true &&id=="itch_io")
     console.log("itch.io")
      action_node.action=action_itch_io+to_search_string
      console.log(action_node.action)
-     
-    
+     search_list.push(action_node.action)
 }
 if(current_checkbox.checked==true &&id=="block")
 {
@@ -79,7 +82,7 @@ if(current_checkbox.checked==true &&id=="block")
     console.log("block")
      action_node.action=action_block+to_search_string
      console.log(action_node.action)
-    
+        search_list.push(action_node.action)
 }
 //console.log(chebox_node2.checked)
 //console.log(id+":"+checked)
@@ -108,6 +111,25 @@ if(current_checkbox.checked==true &&id=="block")
     console.log(to_search_string)
     action_node.action=action+to_search_string
       console.log(action_node.action)
+   }
+   //一键搜索
+   function one_click_search()
+   {
+       var name=""
+       console.log(search_list)
+      // var i=0
+    for(i=0;i<search_list.length;i+=1)
+    {
+        name=Math.random(0,100)
+        console.log(name)
+        window.open(search_list[i],name)
+        var current_a=new link()
+       links.appendChild()
+       //document.write(search_list[i])
+       // setTimeout(1)
+       
+    }        
+       
    }
     function search()
     {
