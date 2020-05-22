@@ -123,8 +123,12 @@ if(current_checkbox.checked==true &&id=="block")
         name=Math.random(0,100)
         console.log(name)
         window.open(search_list[i],name)
-        var current_a=new link()
-       links.appendChild()
+        var current_a=document.createElement("a")
+        var currrent_br=document.createElement("br")
+        current_a.innerHTML=search_list[i]
+        current_a.href=search_list[i]
+       links.appendChild(current_a)
+       links.appendChild(currrent_br)
        //document.write(search_list[i])
        // setTimeout(1)
        
