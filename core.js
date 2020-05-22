@@ -24,25 +24,22 @@ var search_list=[]
     //国内方块游戏平台
     var action_block="http://store.cubejoy.com/html/en/store/searchgoods/websearch.html?search="
 //检查是否被选中
-function m_check()
-{
 
-console.log(chebox_node1.checked)
-if(chebox_node1.checked==true)
-{
-    action=action_4399
-    console.log("4399")
-     action_node.action=action_4399+to_search_string
-     console.log(action_node.action)
-}
-}   
 //通用
-function tap_check(id,checked)
+function tap_check(id)
 {
     //console.log(id)
    
     var current_checkbox=document.getElementById(id)
 console.log(id+":"+current_checkbox.checked)
+if(current_checkbox.checked==true &&id=="4399")
+{
+     action=action_4399
+    console.log("4399")
+     action_node.action=action_4399+to_search_string
+     console.log(action_node.action)
+     search_list.push(action_node.action)
+}
 if(current_checkbox.checked==true &&id=="check_steam")
 {
     action=action_steam
@@ -122,8 +119,9 @@ if(current_checkbox.checked==true &&id=="block")
     {
         name=Math.random(0,100)
         console.log(name)
-        window.open(search_list[i],name)
+        window.open(search_list[i],"_blank")
         var current_a=document.createElement("a")
+        current_a.target="_blank"
         var currrent_br=document.createElement("br")
         current_a.innerHTML=search_list[i]
         current_a.href=search_list[i]
