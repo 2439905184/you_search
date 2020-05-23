@@ -21,6 +21,8 @@ var search_list=[]
     var action_itch_io="https://itch.io/search?q="
     //国内独立游戏网站
     var action_india="https://indienova.com/search/all/"
+    //3dm
+    var action_3dm="https://www.3dmgame.com/"
     //国内方块游戏平台
     var action_block="http://store.cubejoy.com/html/en/store/searchgoods/websearch.html?search="
 //检查是否被选中
