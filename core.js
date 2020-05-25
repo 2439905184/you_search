@@ -27,7 +27,7 @@ var search_list=[]
     //国内方块游戏平台
     var action_block="http://store.cubejoy.com/html/en/store/searchgoods/websearch.html?search="
 //检查是否被选中
-
+var  action_ren_ming_wang="http://search.people.com.cn/cnpeople/search.do"
 //通用
 function tap_check(id)
 {
@@ -41,6 +41,16 @@ if(current_checkbox.checked==true &&id=="4399")
     console.log("4399")
      action_node.action=action_4399+to_search_string
      console.log(action_node.action)
+     search_list.push(action_node.action)
+}
+if(current_checkbox.checked==true &&id=="人民网")
+{
+     action=action_ren_ming_wang
+    console.log("4399")
+     action_node.action=action_ren_ming_wang
+     console.log(action_node.action)
+     action_node.method="post"
+     
      search_list.push(action_node.action)
 }
 if(current_checkbox.checked==true &&id=="17173")
