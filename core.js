@@ -13,6 +13,7 @@ var search_list=[]
    // alert(input_node)
     var action=""
     var action_taptap="https://www.taptap.com/search/"
+    var action_17173="http://newgame.17173.com/game-list.html?tab=all&keyword="
    // role="search" method="get"
     var action_4399="http://so2.4399.com/search/search.php?k="
     var action_need_add_4399="?k="
@@ -39,6 +40,14 @@ if(current_checkbox.checked==true &&id=="4399")
      action=action_4399
     console.log("4399")
      action_node.action=action_4399+to_search_string
+     console.log(action_node.action)
+     search_list.push(action_node.action)
+}
+if(current_checkbox.checked==true &&id=="17173")
+{
+     action=action_17173
+    console.log("17173")
+     action_node.action=action_17173+to_search_string
      console.log(action_node.action)
      search_list.push(action_node.action)
 }
