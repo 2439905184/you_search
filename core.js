@@ -24,6 +24,12 @@ var search_list=[]
     var action_india="https://indienova.com/search/all/"
     //3dm
     var action_3dm="https://www.3dmgame.com/"
+    //花瓣网
+    var action_hua_ban="https://huaban.com/search/?q="
+    //懒设计
+    var action_lazy_design="https://www.fotor.com.cn/templates/?query="
+    //涂鸦王国
+    var action_scratch_kingdom="https://gracg.com/search/index_new?key="
     //国内方块游戏平台
     var action_block="http://store.cubejoy.com/html/en/store/searchgoods/websearch.html?search="
 //检查是否被选中
@@ -67,6 +73,30 @@ if(current_checkbox.checked==true &&id=="17173")
      action=action_17173
     console.log("17173")
      action_node.action=action_17173+to_search_string
+     console.log(action_node.action)
+     search_list.push(action_node.action)
+}
+if(current_checkbox.checked==true &&id=="花瓣网")
+{
+     action=action_hua_ban
+    console.log("花瓣网")
+     action_node.action=action+to_search_string
+     console.log(action_node.action)
+     search_list.push(action_node.action)
+}
+if(current_checkbox.checked==true &&id=="懒设计")
+{
+     action=action_lazy_design
+    console.log("懒设计")
+     action_node.action=action+action_lazy_design
+     console.log(action_node.action)
+     search_list.push(action_node.action)
+}
+if(current_checkbox.checked==true &&id=="涂鸦王国")
+{
+     action=action_scratch_kingdom
+    console.log("懒设计")
+     action_node.action=action+to_search_string
      console.log(action_node.action)
      search_list.push(action_node.action)
 }
