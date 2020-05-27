@@ -32,6 +32,8 @@ var search_list=[]
     var action_scratch_kingdom="https://gracg.com/search/index_new?key="
     //ui中国
     var action_ui_chian="https://s.ui.cn/index.html?keywords="
+    //设计癖
+   var action_design_pi="http://www.shejipi.com/?s="
     //国内方块游戏平台
     var action_block="http://store.cubejoy.com/html/en/store/searchgoods/websearch.html?search="
 //检查是否被选中
@@ -106,6 +108,14 @@ if(current_checkbox.checked==true &&id=="ui中国")
 {
      action=action_ui_chian
     console.log("ui")
+     action_node.action=action+to_search_string
+     console.log(action_node.action)
+     search_list.push(action_node.action)
+}
+if(current_checkbox.checked==true &&id=="设计癖")
+{
+     action=action_design_pi
+    console.log(toString(id))
      action_node.action=action+to_search_string
      console.log(action_node.action)
      search_list.push(action_node.action)
