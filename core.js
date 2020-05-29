@@ -98,6 +98,13 @@ if(current_checkbox.checked==true &&id=="borwroll")
      console.log(action_node.action)
      search_list.push(action_node.action)
 }
+if(current_checkbox.checked==true &&id=="bilibili")
+{
+     action="https://search.bilibili.com/all?keyword="
+     action_node.action=action+to_search_string
+     console.log(action_node.action)
+     search_list.push(action_node.action)
+}
 if(current_checkbox.checked==true &&id=="17173")
 {
      action=action_17173
