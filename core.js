@@ -44,7 +44,22 @@ var search_list=[]
 var  action_ren_ming_wang="http://search.people.com.cn/cnpeople/search.do"
 //今日头条
 var action_jing_ri_tou_tiao="https://www.toutiao.com/search/?keyword="
+
+
+//重置搜索变量
+function reset_var()
+{
+	search_list=[]
+	alert("变量值："+search_list)
+}
+function see_var()
+{
+
+	alert("变量值："+search_list)
+}
+
 //通用
+
 function tap_check(id)
 {
     //console.log(id)
