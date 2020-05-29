@@ -84,6 +84,20 @@ if(current_checkbox.checked==true &&id=="今日头条")
      console.log(action_node.action)
      search_list.push(action_node.action)
 }
+if(current_checkbox.checked==true &&id=="恋爱游戏网")
+{
+     action="https://www.lianaiyx.com/e/search/result/?searchid=69099"
+     action_node.action=action+to_search_string
+     console.log(action_node.action)
+     search_list.push(action_node.action)
+}
+if(current_checkbox.checked==true &&id=="borwroll")
+{
+     action="https://bowlroll.net/file/keyword/"
+     action_node.action=action+to_search_string
+     console.log(action_node.action)
+     search_list.push(action_node.action)
+}
 if(current_checkbox.checked==true &&id=="17173")
 {
      action=action_17173
