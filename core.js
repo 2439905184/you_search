@@ -34,6 +34,8 @@ var search_list=[]
     var action_ui_chian="https://s.ui.cn/index.html?keywords="
     //设计癖
    var action_design_pi="http://www.shejipi.com/?s="
+   //var
+   var action_cn_gal="https://www.cngal.org/search?keyword="
   //动漫之家
   var action_animation_home="https://manhua.dmzj.com/tags/search.shtml?s="
     //国内方块游戏平台
@@ -54,6 +56,14 @@ if(current_checkbox.checked==true &&id=="4399")
      action=action_4399
     console.log("4399")
      action_node.action=action_4399+to_search_string
+     console.log(action_node.action)
+     search_list.push(action_node.action)
+}
+if(current_checkbox.checked==true &&id=="cnGal")
+{
+     action=action_cn_gal
+    console.log("4399")
+     action_node.action=action_cn_gal+to_search_string
      console.log(action_node.action)
      search_list.push(action_node.action)
 }
