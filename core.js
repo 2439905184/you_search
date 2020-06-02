@@ -99,6 +99,13 @@ if(current_checkbox.checked==true &&id=="今日头条")
      console.log(action_node.action)
      search_list.push(action_node.action)
 }
+if(current_checkbox.checked==true &&id=="midifan")
+{
+     action="https://www.midifan.com/modulenews-index.htm?scate=news&title="
+     action_node.action=action+to_search_string
+     console.log(action_node.action)
+     search_list.push(action_node.action)
+}
 if(current_checkbox.checked==true &&id=="恋爱游戏网")
 {
      action="https://www.lianaiyx.com/e/search/result/?searchid=69099"
