@@ -277,6 +277,8 @@ if(current_checkbox.checked==true &&id=="block")
         current_a.href=search_list[i]
        links.appendChild(current_a)
        links.appendChild(currrent_br)
+	   //var current_describe_text=document.createElement("p")
+	  // current_describe_text.innerHTML=search_list[i]
        //document.write(search_list[i])
        // setTimeout(1)
        
